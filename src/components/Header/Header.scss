@@ -1,0 +1,24 @@
+.header-component {
+    padding: 50px;
+
+    .icon {
+        text-align: left;
+        padding-top: 10px;
+
+        .instagram-icon{
+            width: 40px !important;
+        }
+    }
+
+    .alias {
+        color: white;
+    }
+
+    .share {
+        color: rgb(184, 184, 186);
+    }
+
+    .logo {
+        width: 100%;
+    }
+}

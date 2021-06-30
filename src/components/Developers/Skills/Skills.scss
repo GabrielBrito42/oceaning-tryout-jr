@@ -1,0 +1,228 @@
+.skills-component {
+    margin-top: 5%;
+
+    h3 {
+        background-image: -webkit-linear-gradient(45deg, #FFDA15, #FFA115);
+        font-weight: 800;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 800;
+    }
+
+    span {
+        font-size: 500;
+        color: rgb(88, 85, 103);
+    }
+
+    .finish-button {
+        margin-top: 370px;
+        font-weight: 800;
+        font-size: 24px;
+        width: 100%;
+        height: 70px;
+        border: none;
+        background: linear-gradient(90deg, #15FFAB 0%, #15F1FF 100%);
+        border-radius: 50px;
+    }
+
+    input {
+        width: 60%;
+        height: 80px;
+        font-weight: 600;
+        font-size: 40px;
+        outline: none;
+        border: none;
+        background: rgb(19, 18, 24);
+        border-bottom: 5px solid #363443;
+
+        &:focus{
+            border-bottom: 5px solid #15F7D9;
+            color: #15F7D9;
+        }
+    }
+
+    .filled-input {
+        border-bottom: 5px solid #15F7D9;
+        color: #15F7D9;
+    }
+
+    .error {
+        border-bottom: 5px solid red;
+    }
+
+    img {
+        padding-left: 0px;
+        cursor: pointer;
+    }
+    
+    .skills-container {
+        border-radius: 20px 20px 0px 0px;
+        padding-bottom: 0px;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 45%;
+        position: fixed;
+        bottom: 0;
+        background-color: #201F26;
+        color: rgb(119, 117, 132);
+        text-align: center;
+    }
+
+    .skills-container ul {
+        height: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .5s ease;
+        top: 35px;
+        width: 100%;
+    }
+    
+    .rotate-arrow {
+        transition: all .4s ease;
+        transform: rotate(180deg);
+        transform-origin: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 0px;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+
+    .list-margin {
+        margin-bottom: 10px;
+    }
+
+    .skills-container.active {
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .4);
+    }
+
+    .skills-container.active li ul {
+        padding-top: 35px;
+        height: 250px;
+        font-size: 25px;
+        opacity: 1;
+        transform: translateY(0);
+        list-style-type: none;
+    }
+    
+    .skills-container.active ul a {
+        color: #000;
+        display: block;
+    }
+
+    .skills-container-filled {
+        background-image: -webkit-linear-gradient(45deg, #FFDA15, #FFA115) !important;
+        color: #131218;
+    }
+
+    .dropup-skills {
+        text-align: right;
+        font-weight: 700;
+    }
+
+    .skills-added-quantity {
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .skills-added {
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .remove-button {
+        color: red !important;
+        background: white !important;
+        margin-top: 0px !important;
+        border: none !important;
+        font-weight: 600 !important;
+        height: auto !important;
+    }
+
+    .list-container {
+        padding: 0px !important;
+        background-color: white;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .skills-info {
+        padding-bottom: 10px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px 10px rgb(19, 18, 24);
+        border-radius: 10px;
+        border: solid 10px transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        box-shadow: inset 0 0 10px 10px rgb(19, 18, 24);
+        border: solid 2px transparent;
+    }
+
+    @media (max-width: 990px) {
+        font-size: 42px;
+        margin-top: 15%;
+
+        img {
+            width: 55px;
+        }
+
+        .finish-button {
+            margin-top: 15% !important;
+            margin-bottom: 15% !important;
+            font-size: 45px !important;
+            height: 120px !important;
+        }
+
+        .skills-container {
+            width: 100%;
+            right: 0;
+        }
+
+        .skills-added {
+            font-size: 45px;
+        }
+
+        .skills-added-quantity{
+            font-size: 42px;
+        }
+
+        .skills-container.active li ul {
+            height: 400px;
+        } 
+
+        input {
+            width: 100%;
+            margin-top: 35%;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 45px;
+        }
+    }
+}

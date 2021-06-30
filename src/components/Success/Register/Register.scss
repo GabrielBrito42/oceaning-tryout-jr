@@ -1,0 +1,61 @@
+.register-component {
+    margin-top: 10%;
+
+    h3 {
+        background-image: -webkit-linear-gradient(45deg, #FFDA15, #FFA115);
+        font-weight: 800;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+        color: white;
+        font-weight: 800;
+    }
+
+    .developers-list-button {
+        background-color: #201F26 !important;
+        color: white !important;
+    }
+
+    .main-button {
+        margin-top: 20%;
+        font-weight: 800;
+        font-size: 24px;
+        width: 100%;
+        height: 70px;
+        border: none;
+        color: white;
+        background: #201F26;
+        border-radius: 50px;
+    }
+
+    @media (max-width: 990px) {
+        font-size: 42px;
+        margin-top: 30%;
+
+        img {
+            width: 55px;
+        }
+
+        .main-button {
+            margin-top: 35%;
+            height: 95px;
+            font-size: 30px;
+        }
+
+        input {
+            width: 100%;
+            margin-top: 65%;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        h3 {
+            font-size: 45px;
+        }
+    }
+}
